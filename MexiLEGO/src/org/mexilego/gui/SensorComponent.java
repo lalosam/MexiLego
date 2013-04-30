@@ -17,11 +17,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.geom.Ellipse2D;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
-import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 import org.mexilego.operation.Control;
@@ -30,7 +26,6 @@ public class SensorComponent extends JPanel {
 	
 	private static final long serialVersionUID = 1L;
 	
-	BufferedImage img = null;
 	int type;
 	int index;	
 	
@@ -38,23 +33,7 @@ public class SensorComponent extends JPanel {
 		super();
 		this.type = type;
 		this.index = index;
-		setOpaque(false);
-		switch (type) {
-			case 1: // Logic
-				//Nothing to do
-				break;
-			case 2: // Color
-				//Nothing to do
-				break;
-			case 3: // UltraSonic
-				File f = new File("resources/speaker.png");
-				try {
-					img = ImageIO.read(f);
-				} catch (IOException e) {					
-					e.printStackTrace();
-				}
-				break;	
-			}
+		setOpaque(false);	
 	}
 
 	@Override
