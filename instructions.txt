@@ -1,0 +1,19 @@
+This solution has two Applications. One resident in the Lego Mindstorms (NXTHost) and the other in the PC (MexiLEGO).
+
+To use it you first need to install LeJOS for NXT Brick on your computer. http://lejos.sourceforge.net/ (only works with NXT model)
+
+The applications are distributed as Eclipse IDE projects and you must compile them.
+
+To install LeJOS on your computer follow the instructions on http://lejos.sourceforge.net/nxt/nxj/tutorial/Preliminaries/UsingEclipse.htm
+
+In MexiLEGO app may need to modify the path of the libraries according to your LeJOS installation.
+
+The application supports only 32-bit operating systems due to the limitations of bluetooth drivers of LeJOS.
+
+Steps to follow:
+
+1.- Download the frimware of LeJOS into the Mindstorms.
+2.- Pair bluetooth devices (Robot & PC)
+3.- Compile applications.
+4.- Download the NXTHost application and run it on the robot. (Connecting leyend appears on LCD Robot Display)
+5.- On your computer run the MexiLEGO application. (This application will not start if it can not connect to the Bluetooth robot.)
